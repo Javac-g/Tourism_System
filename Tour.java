@@ -3,27 +3,27 @@ import java.util.Set;
 
 public class Tour {
 
-    private Long number;
+    private Long id;
     private String from, where;
     private int cost, final_cost;
     private boolean nutrition, excursion;
     private byte days;
     private Set<VACCINATIONS> vaccinations;
 
-    public Tour(Long number, String from, String where, int cost, Set<VACCINATIONS> vaccinations) {
-        this.number = number;
+    public Tour(Long id, String from, String where, int cost, Set<VACCINATIONS> vaccinations) {
+        this.id = id;
         this.from = from;
         this.where = where;
         this.cost = cost;
         this.vaccinations = vaccinations;
     }
 
-    public Long getNumber() {
-        return number;
+    public Long getId() {
+        return id;
     }
 
-    public void setNumber(Long number) {
-        this.number = number;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getFrom() {
@@ -93,12 +93,12 @@ public class Tour {
     @Override
     public Tour clone(){
         Set<VACCINATIONS> vaccinations1 = new HashSet<>(vaccinations);
-        return new Tour(this.number,this.from , this.where,this.cost,vaccinations1);
+        return new Tour(this.id,this.from , this.where,this.cost,vaccinations1);
     }
     @Override
     public String toString(){
         return "Tour{" +
-                "number=" + number +
+                "ID=" + id +
                 "from = " + from +
                 "where = " + where +
                 "cost = " + cost +
