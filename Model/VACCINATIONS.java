@@ -1,3 +1,5 @@
+package Model;
+
 public enum VACCINATIONS {
     AGAINST_PARASITES,
     AGAINST_EBOLA,

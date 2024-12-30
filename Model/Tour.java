@@ -1,3 +1,5 @@
+package Model;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -97,7 +99,7 @@ public class Tour {
     }
     @Override
     public String toString(){
-        return "Tour{" +
+        return "Model.Tour{" +
                 "ID=" + id +
                 "from = " + from +
                 "where = " + where +

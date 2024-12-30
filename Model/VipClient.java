@@ -1,3 +1,5 @@
+package Model;
+
 public class VipClient  extends Client implements Client_pattern{
 
     private int discount;

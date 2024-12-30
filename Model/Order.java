@@ -1,3 +1,5 @@
+package Model;
+
 public class Order {
 
     private boolean open;
@@ -47,7 +49,7 @@ public class Order {
 
     @Override
     public String toString() {
-        return "Order{" +
+        return "Model.Order{" +
                 "open=" + open +
                 ", tour=" + tour +
                 ", liked=" + liked +
