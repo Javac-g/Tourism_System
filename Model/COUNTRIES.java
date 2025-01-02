@@ -1,6 +1,6 @@
 package Model;
 
-public enum Countries {
+public enum COUNTRIES {
     UKRAINE,
     POLAND,
     GREAT_BRITAIN,

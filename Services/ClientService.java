@@ -4,6 +4,7 @@ import Model.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.Set;
 
 public class ClientService {
@@ -39,7 +40,7 @@ public class ClientService {
     private Client_pattern makeVip(Client_pattern client){
         int number = -1;
         for (int i = 0; i < clients.size(); i++){
-            if (client.getId() == clients.get(i).getId()){
+            if (Objects.equals(client.getId(), clients.get(i).getId())){
                 number = i;
                 break;
             }
