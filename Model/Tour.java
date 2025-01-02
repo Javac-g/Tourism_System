@@ -84,6 +84,10 @@ public class Tour {
         this.vaccinations = vaccinations;
     }
 
+    public void setFinal_cost(int final_cost) {
+        this.final_cost = final_cost;
+    }
+
     public int getFinal_cost(){
 
         int final_prise = this.cost * this.days;
