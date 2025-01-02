@@ -12,7 +12,7 @@ public class Controller {
     private static final TourService tourService = new TourService();
     private static final ClientService clientService = new ClientService(tourService);
 
-    public static void main(String...args){
+    public  void init_controller(){
         while (true){
             View.print_menu();
             int i = View.getNumber("Menu choose: ");
