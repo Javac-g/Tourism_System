@@ -7,7 +7,7 @@ public class View {
     private final static Scanner scanner = new Scanner(System.in);
 
     public static void print_menu(){
-        System.out.println(" --- M E N U --- ");
+        System.out.println(" ---- M E N U ---- ");
         System.out.println("1 - Add client");
         System.out.println("2 - Add tour");
         System.out.println("3 - Add tour to client");
